@@ -63,11 +63,20 @@ export type ExtraSigninRequestArgs = Pick<
  */
 export type ExtraRegisterRequestArgs = Pick<
     CreateRegisterRequestArgs,
+    | "nonce"
     | "extraQueryParams"
     | "extraTokenParams"
     | "state"
-    | "registration_endpoint"
     | "redirect_uri"
+    | "prompt"
+    | "acr_values"
+    | "login_hint"
+    | "scope"
+    | "max_age"
+    | "ui_locales"
+    | "resource"
+    | "url_state"
+    | "registration_endpoint"
 >;
 
 /**

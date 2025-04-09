@@ -111,7 +111,7 @@ export class ErrorTimeout extends Error {
 export type ExtraHeader = string | (() => string);
 
 // @public (undocumented)
-export type ExtraRegisterRequestArgs = Pick<CreateRegisterRequestArgs, "extraQueryParams" | "extraTokenParams" | "state" | "registration_endpoint" | "redirect_uri">;
+export type ExtraRegisterRequestArgs = Pick<CreateRegisterRequestArgs, "nonce" | "extraQueryParams" | "extraTokenParams" | "state" | "redirect_uri" | "prompt" | "acr_values" | "login_hint" | "scope" | "max_age" | "ui_locales" | "resource" | "url_state" | "registration_endpoint">;
 
 // @public (undocumented)
 export type ExtraSigninRequestArgs = Pick<CreateSigninRequestArgs, "nonce" | "extraQueryParams" | "extraTokenParams" | "state" | "redirect_uri" | "prompt" | "acr_values" | "login_hint" | "scope" | "max_age" | "ui_locales" | "resource" | "url_state">;
